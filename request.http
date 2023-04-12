@@ -1,0 +1,26 @@
+### get all of to do list 
+GET http://localhost:3000/api/todo
+
+### get select task
+GET http://localhost:3000/api/todo/2
+
+### create task
+POST http://localhost:3000/api/todo
+Content-Type: application/json
+
+{
+    "task": "Take AWS Exam",
+    "location": "macbook",
+    "description": "additional information here"
+}
+
+### Update a task
+PATCH http://localhost:3000/api/todo/1
+Content-Type: application/json
+
+{
+"description": "Deep clean with bathub"
+}
+
+### Delete a task
+DELETE http://localhost:3000/api/todo/3
